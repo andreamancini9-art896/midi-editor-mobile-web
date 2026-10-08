@@ -1,0 +1,12 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.18
+pretty-midi>=0.2.10
+librosa>=0.10.0
+numpy>=1.26.0
+pydantic>=2.0.0
+basic-pitch>=0.3.0
+tensorflow>=2.16.0
+mypy>=1.0.0
+httpx>=0.28.0
+pytest>=9.0.0

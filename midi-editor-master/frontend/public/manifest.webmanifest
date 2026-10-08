@@ -1,0 +1,16 @@
+{
+  "name": "MIDI Editor Mobile",
+  "short_name": "MIDI Editor",
+  "description": "Record or upload audio, convert it to MIDI, edit notes in a piano roll and export MIDI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#0f0f1a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

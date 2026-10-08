@@ -1,0 +1,24 @@
+# The app now runs entirely in the browser (voice -> MIDI, piano roll, MIDI import/export),
+# so only the static site is needed.
+services:
+  - type: static
+    name: midi-editor-web
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+
+# OPTIONAL - only if you want the polyphonic "Poly (Instruments)" mode (Basic Pitch, needs Python/TensorFlow):
+#   1. uncomment the service below and deploy it
+#   2. set CORS_ORIGINS to the URL of the web app
+#   3. add VITE_API_URL (URL of this API) to the web service and redeploy it
+#
+#  - type: web
+#    name: midi-editor-api
+#    runtime: python
+#    rootDir: backend
+#    buildCommand: pip install -r requirements.txt
+#    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+#    healthCheckPath: /health
+#    envVars:
+#      - key: CORS_ORIGINS
+#        sync: false
